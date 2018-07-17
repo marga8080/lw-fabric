@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: lw-fabric-sdk-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: dell
+Implementation-Vendor-Id: com.linewell
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/lw-fabric/lw-fabric-sdk-service
+Created-By: Maven Integration for Eclipse
+

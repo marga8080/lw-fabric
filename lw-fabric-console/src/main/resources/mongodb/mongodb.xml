@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:mongo-config xmlns:ns1="http://www.ccip.com/mongo-config"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.ccip.com/mongo-config mongodb.xsd">
+	<mongo>
+        <alias>fabric</alias>
+        <address>127.0.0.1</address>
+        <port>27017</port>
+        <dbname>FabricDB</dbname>
+        <needAuth>false</needAuth>
+        <replicaSetSeeds></replicaSetSeeds>
+        <username>zjszf</username>
+        <password>kisw62bmks</password>
+        <connectionsPerHost>500</connectionsPerHost>
+        <threadsAllowedToBlockForConnectionMultiplier>5000</threadsAllowedToBlockForConnectionMultiplier>
+        <maxWaitTime>5000</maxWaitTime>
+        <connectTimeout>15000</connectTimeout>
+        <socketTimeout>20000</socketTimeout>
+        <autoConnectRetry>true</autoConnectRetry>
+        <socketKeepAlive>true</socketKeepAlive>
+    </mongo>
+	
+	<mongo>
+		<alias>bundle</alias>
+		<address>127.0.0.1</address> 
+		<port>27017</port>
+		<dbname>BundleConfig</dbname>
+		<needAuth>false</needAuth>
+		<replicaSetSeeds></replicaSetSeeds>
+		<username>zjszf</username>
+		<password>kisw62bmks</password>
+		<connectionsPerHost>500</connectionsPerHost>
+		<threadsAllowedToBlockForConnectionMultiplier>5000</threadsAllowedToBlockForConnectionMultiplier>
+		<maxWaitTime>5000</maxWaitTime>
+		<connectTimeout>15000</connectTimeout>
+		<socketTimeout>20000</socketTimeout>
+		<autoConnectRetry>true</autoConnectRetry>
+		<socketKeepAlive>true</socketKeepAlive>
+	</mongo>
+	
+	<mongo>
+		<alias>log</alias>
+		<address>127.0.0.1</address> 
+		<port>27017</port>
+		<dbname>LogDB</dbname>
+		<needAuth>false</needAuth>
+		<replicaSetSeeds></replicaSetSeeds>
+		<username>zjszf</username>
+		<password>kisw62bmks</password>
+		<connectionsPerHost>500</connectionsPerHost>
+		<threadsAllowedToBlockForConnectionMultiplier>5000</threadsAllowedToBlockForConnectionMultiplier>
+		<maxWaitTime>5000</maxWaitTime>
+		<connectTimeout>15000</connectTimeout>
+		<socketTimeout>20000</socketTimeout>
+		<autoConnectRetry>true</autoConnectRetry>
+		<socketKeepAlive>true</socketKeepAlive>
+	</mongo>
+	
+
+	
+	<mongo>
+		<alias>monitor</alias>
+		<address>127.0.0.1</address> 
+		<port>27017</port>
+		<dbname>MonitorDB</dbname>
+		<needAuth>false</needAuth>
+		<replicaSetSeeds></replicaSetSeeds>
+		<username>zjszf</username>
+		<password>kisw62bmks</password>
+		<connectionsPerHost>500</connectionsPerHost>
+		<threadsAllowedToBlockForConnectionMultiplier>5000</threadsAllowedToBlockForConnectionMultiplier>
+		<maxWaitTime>5000</maxWaitTime>
+		<connectTimeout>15000</connectTimeout>
+		<socketTimeout>20000</socketTimeout>
+		<autoConnectRetry>true</autoConnectRetry>
+		<socketKeepAlive>true</socketKeepAlive>
+	</mongo>
+	
+	<mongo>
+		<alias>session</alias>
+		<address>127.0.0.1</address> 
+		<port>27017</port>
+		<dbname>SessionDB</dbname>
+		<needAuth>false</needAuth>
+		<replicaSetSeeds></replicaSetSeeds>
+		<username>zjszf</username>
+		<password>kisw62bmks</password>
+		<connectionsPerHost>500</connectionsPerHost>
+		<threadsAllowedToBlockForConnectionMultiplier>5000</threadsAllowedToBlockForConnectionMultiplier>
+		<maxWaitTime>5000</maxWaitTime>
+		<connectTimeout>15000</connectTimeout>
+		<socketTimeout>20000</socketTimeout>
+		<autoConnectRetry>true</autoConnectRetry>
+		<socketKeepAlive>true</socketKeepAlive>
+	</mongo>
+	
+</ns1:mongo-config>

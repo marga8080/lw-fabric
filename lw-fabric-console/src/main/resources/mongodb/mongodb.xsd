@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.ccip.com/mongo-config" targetNamespace="http://www.ccip.com/mongo-config">
+	<xs:element name="mongo-config">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="mongo" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="alias">
+								<xs:simpleType id="nameType">
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="100"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="address">
+								<xs:simpleType id="ipType">
+									<xs:restriction base="xs:string">
+										<xs:minLength value="7"/>
+										<xs:maxLength value="500"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="port" type="xs:string" nillable="true"/>
+							<xs:element name="dbname">
+								<xs:simpleType id="dbNameType">
+									<xs:restriction base="xs:string">
+										<xs:minLength value="1"/>
+										<xs:maxLength value="100"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="needAuth" type="xs:boolean" minOccurs="0"/>
+							<xs:element name="replicaSetSeeds" type="xs:string" minOccurs="0"/>
+							<xs:element name="username" type="xs:string" minOccurs="0"/>
+							<xs:element name="password" type="xs:string" minOccurs="0"/>
+							<xs:element name="connectionsPerHost" type="xs:string" minOccurs="0"/>
+							<xs:element name="threadsAllowedToBlockForConnectionMultiplier" type="xs:string" minOccurs="0"/>
+							<xs:element name="maxWaitTime" type="xs:string" minOccurs="0"/>
+							<xs:element name="connectTimeout" type="xs:string" minOccurs="0"/>
+							<xs:element name="socketTimeout" type="xs:string" minOccurs="0"/>
+							<xs:element name="autoConnectRetry" type="xs:boolean" minOccurs="0"/>	
+							<xs:element name="socketKeepAlive" type="xs:boolean" minOccurs="0"/>						 
+
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

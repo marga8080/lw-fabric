@@ -21,3 +21,21 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+lw-fabric-common/target/
+lw-fabric-sdk-service/target/classes/META-INF/maven/com.linewell/lw-fabric-sdk-service/pom.xml
+lw-fabric-common/.classpath
+lw-fabric-common/.project
+lw-fabric-common/.settings/org.eclipse.core.resources.prefs
+lw-fabric-common/.settings/org.eclipse.jdt.core.prefs
+lw-fabric-common/.settings/org.eclipse.m2e.core.prefs
+.project
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.m2e.core.prefs
+lw-fabric-console/target/classes/log4j2.xml
+lw-fabric-console/target/
+lw-fabric-console/.settings/org.eclipse.jdt.core.prefs
+lw-fabric-console/.settings/org.eclipse.m2e.core.prefs
+lw-fabric-sdk-service/.classpath
+lw-fabric-sdk-service/.settings/org.eclipse.core.resources.prefs
+lw-fabric-sdk-service/.settings/org.eclipse.jdt.core.prefs
+lw-fabric-sdk-service/.settings/org.eclipse.m2e.core.prefs
