@@ -1,5 +1,8 @@
 package com.linewell.common;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -33,4 +36,43 @@ public abstract class BaseController {
     	result.setErrmsg(e.getMessage());
     	return result;
     } 
+    
+    /**
+	 * 获取页码
+	 * @param request
+	 * @return
+	 */
+	public static int getPageNo(HttpServletRequest request) {
+		String no = request.getParameter("pageNo");
+		int pageNo = 1;
+		if (StringUtils.isNumeric(no)){
+			pageNo = Integer.parseInt(no);
+		}
+		return pageNo;
+	}
+	
+	/**
+	 * 获取每页记录数pageSize
+	 * @param request
+	 * @param defaultPageSize 默认pageSize
+	 * @return
+	 */
+	public static int getPageSize(HttpServletRequest request, int defaultPageSize) {
+		String size = request.getParameter("pageSize");
+		int pageSize = defaultPageSize;
+		if (StringUtils.isNumeric(size)){
+			pageSize = Integer.parseInt(size);
+		} 
+		return pageSize;
+	}
+	
+	/**
+	 * 获取每页记录数pageSize
+	 * @param request
+	 * @param defaultPageSize 默认10
+	 * @return
+	 */
+	public static int getPageSize(HttpServletRequest request) {
+		return getPageSize(request, 10);
+	}
 }
